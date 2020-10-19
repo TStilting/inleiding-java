@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f567c31-ab82-4796-8f73-596931999027" name="Default Changelist" comment="text changed." />
+    <list default="true" id="2f567c31-ab82-4796-8f73-596931999027" name="Default Changelist" comment="text changed.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/h01/HalloRocDev.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,12 +37,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Applet.opdracht124">
+    <configuration name="opdracht124" type="Applet" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="H12.src.opdracht124" />
+      <module name="inleiding-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HalloRocDev" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="h01.HalloRocDev" />
       <module name="inleiding-java" />
@@ -55,6 +66,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Applet.opdracht124" />
         <item itemvalue="Application.HalloRocDev" />
       </list>
     </recent_temporary>
@@ -69,6 +81,8 @@
       <updated>1600156879034</updated>
       <workItem from="1600156880152" duration="554000" />
       <workItem from="1600237958359" duration="33000" />
+      <workItem from="1603104590769" duration="987000" />
+      <workItem from="1603105784935" duration="933000" />
     </task>
     <task id="LOCAL-00001" summary="text changed.">
       <created>1600157173450</created>
@@ -77,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600157173450</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="text changed.">
+      <created>1603104789873</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603104789873</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,26 +121,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="text changed." />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1600157436492">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603106899511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600157436492" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1600157436492">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603106899511" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603106899511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600157436492" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1600157436492">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603106899511" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603106899511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600157436492" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1600157436492">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603106899511" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603106899511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600157436492" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600157196587">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603106899511" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603104792120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600157196587" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603104792120" />
     <state x="342" y="140" key="new project wizard" timestamp="1600237989238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
