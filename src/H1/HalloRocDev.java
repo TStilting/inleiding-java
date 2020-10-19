@@ -1,11 +1,11 @@
-package h01;
+//package H1;
 
 /**
  * Created by piet on 31-08-16.
  */
-public class HalloRocDev {
+//public class HalloRocDev {
 
-    public static void main(String[] args) {
-        System.out.println("Hallo, het is gelukt!");
-    }
-}
+//    public static void main(String[] args) {
+//        System.out.println("Hallo, het is gelukt!");
+//    }
+//}
