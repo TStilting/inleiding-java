@@ -6,25 +6,22 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class opdracht126 extends Applet {
-    // maak een tabel met 5 getallen en 2 met dezelfde waarde
     boolean gevonden;
-    double[] reeks = { 1, 2, 3, 4, 5};
+    double[] reeks = { 1, 2, 2, 3, 4, 5, 5};
     double waarde;
+    int aantal;
     TextField tekstvak;
-    Button Ok;
     Label label;
     String tekst;
 
     public void init() {
         tekstvak = new TextField("", 5);
         label = new Label("Vul een getal in:");
-        Ok = new Button("Ok");
-        Ok.addActionListener( new opdracht126.KnopListener() );
         gevonden = false;
         waarde = 0;
+        tekstvak.addActionListener( new opdracht126.TekstListener() );
         add(label);
         add(tekstvak);
-        add(Ok);
         tekst = "";
     }
 
@@ -34,9 +31,26 @@ public class opdracht126 extends Applet {
     }
 
 
-    class KnopListener implements ActionListener {
+    class TekstListener implements ActionListener {
         public void actionPerformed( ActionEvent e ) {
-
+            waarde = Double.parseDouble(tekstvak.getText());
+            int teller = 0;
+            while(teller < reeks.length) {
+                if(reeks[teller] == waarde) {
+                    tekst = "Gevonden waarde: " + waarde;
+                    if(waarde == 2 || waarde == 5) {
+                        aantal = 2;
+                        tekst = "Gevonden waarde komt " + aantal + " keer voor: " + waarde;
+                    }
+                    repaint();
+                    break;
+                }
+                else{
+                    tekst = "Ongeldige waarde";
+                    repaint();
+                }
+                teller ++;
+            }
         }
     }
 }
