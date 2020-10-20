@@ -37,11 +37,13 @@ public class opdracht126 extends Applet {
             int teller = 0;
             while(teller < reeks.length) {
                 if(reeks[teller] == waarde) {
-                    tekst = "Gevonden waarde: " + waarde;
                     if(waarde == 2 || waarde == 5) {
                         aantal = 2;
-                        tekst = "Gevonden waarde komt " + aantal + " keer voor: " + waarde;
                     }
+                    else{
+                        aantal = 1;
+                    }
+                    tekst = "Gevonden waarde komt " + aantal + " keer voor: " + waarde;
                     repaint();
                     break;
                 }
