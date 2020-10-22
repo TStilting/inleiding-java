@@ -12,7 +12,8 @@ public class opdracht133 extends Applet {
     double[] beton1;
     double[] beton2;
     Button baksteen, beton;
-    boolean uitvoerSteen, uitvoerBeton;
+    boolean uitvoerSteen;
+    boolean uitvoerBeton;
 
 
     public void init() {
@@ -37,6 +38,80 @@ public class opdracht133 extends Applet {
         int y = 50;
         int w2 = 60;
         int h2 = 40;
+        int x2 = 350;
+
+        if(uitvoerSteen == true) {
+            for (int teller = 0; teller < steen1.length; teller++) {
+                tekenSteen (g, x, y, w, h);
+                x += 50;
+            }
+            x = 75;
+            y += 30;
+            for (int teller = 0; teller < steen2.length; teller++) {
+                tekenSteen (g, x, y, w, h);
+                x += 50;
+            }
+            x = 50;
+            y += 30;
+            for (int teller = 0; teller < steen1.length; teller++) {
+                tekenSteen (g, x, y, w, h);
+                x += 50;
+            }
+            x = 75;
+            y += 30;
+            for (int teller = 0; teller < steen2.length; teller++) {
+                tekenSteen (g, x, y, w, h);
+                x += 50;
+            }
+            x = 50;
+            y += 30;
+            for (int teller = 0; teller < steen1.length; teller++) {
+                tekenSteen (g, x, y, w, h);
+                x += 50;
+            }
+        }
+
+        if(uitvoerSteen == false) {
+            g.setColor(Color.white);
+            g.fillRect( 50, 50,250, 150);
+        }
+
+        if(uitvoerBeton == true) {
+            for (int teller = 0; teller < beton1.length; teller++) {
+                tekenBeton (g, x2, y, w2, h2);
+                x += 50;
+            }
+            x = 75;
+            y += 30;
+            for (int teller = 0; teller < beton2.length; teller++) {
+                tekenBeton (g, x2, y, w2, h2);
+                x += 50;
+            }
+            x = 50;
+            y += 30;
+            for (int teller = 0; teller < beton1.length; teller++) {
+                tekenBeton (g, x2, y, w2, h2);
+                x += 50;
+            }
+            x = 75;
+            y += 30;
+            for (int teller = 0; teller < beton2.length; teller++) {
+                tekenBeton (g, x2, y, w2, h2);
+                x += 50;
+            }
+            x = 50;
+            y += 30;
+            for (int teller = 0; teller < beton1.length; teller++) {
+                tekenBeton (g, x2, y, w2, h2);
+                x += 50;
+            }
+        }
+
+        if(uitvoerBeton == false) {
+            g.setColor(Color.white);
+            //g.fillRect();
+        }
+
     }
 
     class KnopListener implements ActionListener {
@@ -62,11 +137,12 @@ public class opdracht133 extends Applet {
 
     }
 
-    void tekenBeton ( Graphics g, int x, int y, int w2, int h2) {
+    void tekenBeton ( Graphics g, int x2, int y, int w2, int h2) {
         g.setColor(Color.gray);
-        g.fillRect( x, y, w2, h2);
+        g.fillRect( x2, y, w2, h2);
         g.setColor(Color.white);
-        g.drawRect( x, y, w2, h2);
+        g.drawRect( x2, y, w2, h2);
 
     }
+
 }
