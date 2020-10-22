@@ -71,11 +71,6 @@ public class opdracht133 extends Applet {
             }
         }
 
-        if(uitvoerSteen == false) {
-            g.setColor(Color.white);
-            g.fillRect( 50, 50,250, 150);
-        }
-
         if(uitvoerBeton == true) {
             for (int teller = 0; teller < beton1.length; teller++) {
                 tekenBeton (g, x2, y, w2, h2);
@@ -106,12 +101,6 @@ public class opdracht133 extends Applet {
                 x += 50;
             }
         }
-
-        if(uitvoerBeton == false) {
-            g.setColor(Color.white);
-            //g.fillRect();
-        }
-
     }
 
     class KnopListener implements ActionListener {
