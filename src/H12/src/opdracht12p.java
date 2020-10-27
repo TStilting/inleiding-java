@@ -11,7 +11,6 @@ public class opdracht12p extends Applet {
     Button Ok;
     Label label;
     int teller;
-    Graphics gr;
     String[] naam;
     String[] nummer;
 
