@@ -12,6 +12,7 @@ public class opdracht133 extends Applet {
     double[] beton1;
     double[] beton2;
     Button baksteen, beton;
+    Graphics gr;
     int w = 50;
     int h = 30;
     int x = 50;
@@ -26,6 +27,7 @@ public class opdracht133 extends Applet {
         steen2 = new double [4];
         beton1 = new double [5];
         beton2 = new double [4];
+        gr = getGraphics();
         baksteen = new Button("Steen");
         beton = new Button("Beton");
         baksteen.addActionListener(new KnopListener());
@@ -38,86 +40,91 @@ public class opdracht133 extends Applet {
 
     class KnopListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            Graphics g = null;
             for (int teller = 0; teller < steen1.length; teller++) {
-                tekenSteen (g, x, y, w, h);
+                tekenSteen (gr, x, y, w, h);
                 x += 50;
             }
             x = 75;
             y += 30;
             for (int teller = 0; teller < steen2.length; teller++) {
-                tekenSteen (g, x, y, w, h);
+                tekenSteen (gr, x, y, w, h);
                 x += 50;
             }
             x = 50;
             y += 30;
             for (int teller = 0; teller < steen1.length; teller++) {
-                tekenSteen (g, x, y, w, h);
+                tekenSteen (gr, x, y, w, h);
                 x += 50;
             }
             x = 75;
             y += 30;
             for (int teller = 0; teller < steen2.length; teller++) {
-                tekenSteen (g, x, y, w, h);
+                tekenSteen (gr, x, y, w, h);
                 x += 50;
             }
             x = 50;
             y += 30;
             for (int teller = 0; teller < steen1.length; teller++) {
-                tekenSteen (g, x, y, w, h);
+                tekenSteen (gr, x, y, w, h);
                 x += 50;
             }
+            x = 50;
+            y = 50;
+
         }
     }
 
     class KnopListener1 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            Graphics g = null;
-            for (int teller1 = 0; teller1 < beton1.length; teller1++) {
-                tekenBeton (g, x2, y, w2, h2);
-                x += 50;
+            for (int teller = 0; teller < beton1.length; teller++) {
+                tekenBeton (gr, x2, y, w2, h2);
+                x2 += 60;
             }
-            x = 75;
-            y += 30;
-            for (int teller1 = 0; teller1 < beton2.length; teller1++) {
-                tekenBeton (g, x2, y, w2, h2);
-                x += 50;
+            x2 = 375;
+            y += 40;
+            for (int teller = 0; teller < beton2.length; teller++) {
+                tekenBeton (gr, x2, y, w2, h2);
+                x2 += 60;
             }
-            x = 50;
-            y += 30;
-            for (int teller1 = 0; teller1 < beton1.length; teller1++) {
-                tekenBeton (g, x2, y, w2, h2);
-                x += 50;
+            x2 = 350;
+            y += 40;
+            for (int teller = 0; teller < beton1.length; teller++) {
+                tekenBeton (gr, x2, y, w2, h2);
+                x2 += 60;
             }
-            x = 75;
-            y += 30;
-            for (int teller1 = 0; teller1 < beton2.length; teller1++) {
-                tekenBeton (g, x2, y, w2, h2);
-                x += 50;
+            x2 = 375;
+            y += 40;
+            for (int teller = 0; teller < beton2.length; teller++) {
+                tekenBeton (gr, x2, y, w2, h2);
+                x2 += 60;
             }
-            x = 50;
-            y += 30;
-            for (int teller1 = 0; teller1 < beton1.length; teller1++) {
-                tekenBeton (g, x2, y, w2, h2);
-                x += 50;
+            x2 = 350;
+            y += 40;
+            for (int teller = 0; teller < beton1.length; teller++) {
+                tekenBeton (gr, x2, y, w2, h2);
+                x2 += 60;
             }
+            x2 = 350;
+            y = 50;
         }
     }
 
 
-    void tekenSteen ( Graphics g, int x, int y, int w, int h) {
-        g.setColor(Color.red);
-        g.fillRect( x, y, w, h);
-        g.setColor(Color.white);
-        g.drawRect( x, y, w, h);
+
+
+    void tekenSteen(Graphics gr, int x, int y, int w, int h) {
+        this.gr.setColor(Color.red);
+        gr.fillRect( x, y, w, h);
+        gr.setColor(Color.white);
+        gr.drawRect( x, y, w, h);
 
     }
 
-    void tekenBeton ( Graphics g, int x2, int y, int w2, int h2) {
-        g.setColor(Color.gray);
-        g.fillRect( x2, y, w2, h2);
-        g.setColor(Color.white);
-        g.drawRect( x2, y, w2, h2);
+    void tekenBeton(Graphics gr, int x2, int y, int w2, int h2) {
+        gr.setColor(Color.gray);
+        gr.fillRect( x2, y, w2, h2);
+        gr.setColor(Color.white);
+        gr.drawRect( x2, y, w2, h2);
 
     }
 
