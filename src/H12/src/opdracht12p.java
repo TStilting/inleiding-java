@@ -10,6 +10,8 @@ public class opdracht12p extends Applet {
     TextField tekstvak, tekstvak1;
     Button Ok;
     Label label;
+    int teller;
+    Graphics gr;
     String[] naam;
     String[] nummer;
 
@@ -18,6 +20,7 @@ public class opdracht12p extends Applet {
         nummer = new String [10];
         tekstvak = new TextField("", 10);
         tekstvak1 = new TextField("", 10);
+        teller = 0;
         label = new Label("voer naam en nummer in");
         Ok = new Button("Ok");
         Ok.addActionListener(new opdracht12p.KnopListener());
@@ -39,18 +42,16 @@ public class opdracht12p extends Applet {
         g.drawString(naam[7] + "  " + nummer[7], 50, 110);
         g.drawString(naam[8] + "  " + nummer[8], 50, 120);
         g.drawString(naam[9] + "  " + nummer[9], 50, 130);
+        if(teller > 9) {
+        g.drawString("Limiet Berijkt", 60,145);
+        }
     }
 
 
     class KnopListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-         int teller = 0;
-
-
-                naam[teller] = tekstvak.getText();
-
-
-                nummer[teller] = tekstvak1.getText();
+            naam[teller] = tekstvak.getText();
+            nummer[teller] = tekstvak1.getText();
             teller++;
             repaint();
         }
